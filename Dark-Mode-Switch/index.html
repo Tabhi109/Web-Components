@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark-Mode-Switch</title>
+</head>
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'seoge UI' , sans-serif;
+    scroll-behavior: smooth;
+}
+#dark-mode-icon {
+    font-size: larger;
+    cursor: pointer;
+    padding: 15px;
+}
+.dark-mode {
+    background-color: black;
+    color: antiquewhite;
+}
+
+</style>
+
+<body>
+    <div class="conatiner">
+        <div id="dark-mode-icon" title="Toggle Dark/Light Mode">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+        </div>
+        <div class="container">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit voluptatum tempore facilis quidem optio totam itaque incidunt esse dignissimos temporibus officia quisquam neque rem et, reprehenderit, quod sequi aut. Iure?         
+        </div>
+     </div>
+
+
+
+
+<script>
+let navBar = document.querySelector('.navbar');
+let darkMode = document.querySelector('#dark-mode-icon');
+let body = document.body;
+
+darkMode.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+});
+
+</script>
+
+    <script
+      src="https://kit.fontawesome.com/81d73e8e4d.js"
+      crossorigin="anonymous"></script>
+</body>
+</html>
